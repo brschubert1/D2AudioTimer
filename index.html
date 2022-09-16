@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stopwatch</title>
+
+	<link rel="stylesheet" href="main.css" />
+</head>
+<body>
+ <header class="header"><img src = "DTimerLogo.png" width = "290" align = "center"/></header>
+	<div class="watch">
+		<input class="input" type="text" id="hrsInput" name="stuff" maxlength="2" value="00"></input>
+		<div class="divide">:</div>
+		<input class="input" type="text" id="minsInput" name="stuff" maxlength="2" value="00"></input>
+		<div class="divide">:</div>
+		<input class="input" type="text" id="secsInput" name="stuff" maxlength="2" value="00"></input>
+		<div class="time">
+			00:00:00
+		</div>
+		<div class="controls">
+			<button id="submit">Submit</button>
+			<button id="start">Start</button>
+			<button id="stop">Stop</button>
+			<button id="reset">Reset</button>
+		</div>
+	</div>
+
+	<!-- AUDIO TIMER STUFF -->
+	<div class="audioTimers"><p class="innerAudioTimers">
+		Current Timers: &#160;&#160;&#160;&#160;
+	<button class="newToDoButton" id="newToDoButton" disabled="false" title="Not functional yet">
+	<svg width="40" height="40" viewBox="0 0 40 40" title="Add Timer">
+          <circle cx="20" cy="20" r="9" class="icon" />
+          <line x1="15" x2="25" y1="20" y2="20" class="icon" />
+          <line x1="20" x2="20" y1="15" y2="25" class="icon" />
+        </svg></button></p>
+	</div>
+
+	<div class="timers">
+		<label class="control control-checkbox">
+			Stack Camp Reminder<br>
+			Frequency: x | Time: 43s
+				<input type="checkbox" id="check1" checked="checked" />
+		<div class="control_indicator"></div>
+		</label>
+	</div>
+
+	<div class="timers">
+		<label class="control control-checkbox">
+			Check Mid Reminder<br>
+			Frequency: 8 | Time: 30s
+				<input type="checkbox" id="check2" checked="checked" />
+		<div class="control_indicator"></div>
+		</label>
+	</div>
+
+	<div class="timers">
+		<label class="control control-checkbox">
+			6 Minute Rune Spawning<br>
+			Frequency: 1 | Time: 5:35s
+				<input type="checkbox" id="check3" checked="checked" />
+		<div class="control_indicator"></div>
+		</label>
+	</div>
+
+	<script src="main.js"></script>
+</body>
+</html>
