@@ -11,6 +11,7 @@ let interval = null;
 var stackAudio = new Audio('maybeStack.mp3');
 var checkMidAudio = new Audio('checkMid.mp3');
 var sixMinRune = new Audio('sixMinRune.mp3');
+var motivationalSpeach = new Audio('motivationalSpeach.mp3');
 var midAudioCount = 0;
 
 // Event listeners
@@ -51,6 +52,13 @@ function timer () {
 	if (mins == 5 && secs == 35) {
 		if (document.getElementById('check3').checked) {
 			sixMinRune.play();
+		}
+	}
+	
+	//motivational speach
+	if (mins == 18) {
+		if (document.getElementById('check4').checked) {
+			motivationalSpeach.play();
 		}
 	}
 
