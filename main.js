@@ -56,7 +56,7 @@ function timer () {
 	}
 	
 	//motivational speach
-	if (mins == 18) {
+	if (mins == 15 && secs == 1) {
 		if (document.getElementById('check4').checked) {
 			motivationalSpeach.play();
 		}
